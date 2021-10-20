@@ -15,6 +15,8 @@ return [
     'noCurrentNews' => "No Currents news",
     'currentProduction' => "Currents Productions",
     'noCurrentProduction' => "No Currents productions",
+    'partnerAccess' => "Partners Access",
+
 
 
 

@@ -15,6 +15,8 @@ return [
     'noCurrentNews' => "Aucune récente actualité",
     'currentProduction' => "Productions récents",
     'noCurrentProduction' => "Aucune récente production",
+    'partnerAccess' => "Accès Partenaires",
+
 
 
 

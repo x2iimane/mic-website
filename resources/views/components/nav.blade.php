@@ -24,7 +24,8 @@
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item {{ (Request::is('login') ? 'activated' : '') }}">
-                            <a class="nav-link" href="{{ route('login') }}">Accès Partenaire</a>
+                            <a class="nav-link" href="{{ route('login') }}">
+                               {{ __('main.partnerAccess')}}</a>
                         </li>
                     @endif
                     @else
