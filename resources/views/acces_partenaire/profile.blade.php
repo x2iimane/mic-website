@@ -23,13 +23,13 @@
                             @method('PATCH')
                             <div class="modal-body">
                                 <div class="mb-3 row">
-                                    <label class="col-sm-2 col-form-label">E-mail</label>
+                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.profile.emailText')}}</label>
                                     <div class="col-sm-10">
                                         <input type="email" name="email" class="form-control" value="{{Auth::user()->email}}">
                                     </div>
                                 </div>
                                 <div class="mb-3 row align-middle">
-                                    <label class="col-sm-2 col-form-label">Mot de passe</label>
+                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.profile.passwordText')}}</label>
                                     <div class="col-sm-10">
                                         <input type="password" name="password" class="form-control">
                                     </div>
@@ -62,31 +62,31 @@
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">N°Identité</label>
+                            <label class="col-sm-4 col-form-label">ID</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->id }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">Nom</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.lastNameText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->first_name }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">Prénom</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.firtNameText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->last_name }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">E-mail</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.emailText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->email }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">Mot de passe</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.passwordText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 ********
                             </div>
