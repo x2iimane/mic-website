@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Réalisations - Projet MIC</title>
+  <title>{{ __('recherche.searchtitle')}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,13 +26,13 @@
                             <div class="row p-5">
                                 <div class="card card-body" style="font-size: 24px">
                                     <div class="text-center m-5">
-                                        Aucune actualité ou production n'est trouvée
+                                        {{ __('recherche.noprodnews')}}
                                     </div>
                                 </div>
                             </div>
                         @endif
                         @if($actualites->count() != 0)
-                            <h2 class="pt-4 pb-4">Actualités trouvées :</h2>
+                            <h2 class="pt-4 pb-4">{{ __('recherche.newsfound')}}:</h2>
                             @foreach($actualites as $actualite)
                                 @php(Carbon\Carbon::setLocale('fr'))
                                 <article class="entry">
@@ -54,7 +54,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="read-more">
-                                                    <a href="\actualites\{{$actualite->id}}">Lire la suite...</a>
+                                                    <a href="\actualites\{{$actualite->id}}">{{ __('production.readmore')}}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@
                             @endforeach
                         @endif
                         @if($productions->count() != 0)
-                            <h2 class="pt-4">Production scientifiques trouvé :</h2>
+                            <h2 class="pt-4">{{ __('recherche.prodfound')}}:</h2>
                             @foreach($productions as $production)
                                     <article class="entry">
                                         <div class="row m-5">
@@ -73,7 +73,7 @@
                                             <div class="entry-content">
                                                 <p>{{substr($production->resume,0,strpos($production->resume, ' ', 180))}}...</p>
                                                 <div class="read-more">
-                                                    <a href="/productions/{{$production->id}}">Lire la suite...</a>
+                                                    <a href="/productions/{{$production->id}}">{{ __('production.readmore')}}</a>
                                                 </div>
                                             </div>
                                         </div>

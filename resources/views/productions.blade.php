@@ -40,7 +40,7 @@
                       @if($productions->count() == 0)
                           <div class="card card-body" style="font-size: 24px">
                               <div class="text-center m-5">
-                                  {{ __('production.noproduction') }}Aucune production n'est trouvée
+                                  {{ __('production.noproduction') }}
                               </div>
                           </div>
                       @else
@@ -53,7 +53,7 @@
                                       <div class="entry-content">
                                           <p>{{substr($production->resume,0,strpos($production->resume, ' ', 180))}}...</p>
                                           <div class="read-more">
-                                              <a href="/productions/{{$production->id}}">Lire la suite...</a>
+                                              <a href="/productions/{{$production->id}}">{{ __('production.readmore') }}</a>
                                           </div>
                                       </div>
                                   </div>
@@ -67,7 +67,7 @@
                       <h3 class="sidebar-title">{{ __('main.search') }}</h3>
                       <div class="sidebar-item search-form">
                           <form action="\productions" method="get">
-                              <input type="text" name="q" placeholder="Rechercher une production" value="{{$search_text}}">
+                              <input type="text" name="q" placeholder="{{ __('production.searchproduction') }}" value="{{$search_text}}">
                               <button type="submit"><i class="icofont-search"></i></button>
                           </form>
                       </div>

@@ -19,10 +19,10 @@
             <section class="pt-5 breadcrumbs">
                 <div class="container">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Présentation</h2>
+                        <h2>{{ __('about.presentation')}}</h2>
                         <ol>
-                            <li><a href="/">Accueil</a></li>
-                            <li>À propos</li>
+                            <li><a href="/">{{ __('nav.home')}}</a></li>
+                            <li>{{ __('nav.about')}}</li>
                         </ol>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0">
                             <h1 class="pb-2">Vers une Mine Intelligente Connectée</h1>
-                            <h2 class="font-italic pb-3">Description du Projet</h2>
+                            <h2 class="font-italic pb-3">{{ __('about.projectdesc')}}</h2>
                             <p>
                               L’industrie minière est caractérisée par un environnement économique en permanence sous pression et très contraignant (évolution imprévisible des prix des
                               matières premières, épuisement des réserves minières, … etc.). Afin d’atténuer en partie cette volatilité de l’écosystème, l’industrie minière est face à
@@ -49,7 +49,7 @@
                               le pilotage et la supervision des unités de production notamment dans l’industrie minière.<br><br>
                               Dans ce sens, Managem, MASciR et les partenaires académiques : l’Ecole Nationale Supérieure des Mines de Rabat, l’ENSIAS (UniversitéM5 Rabat) et l’Université
                               Cadi Ayyad de Marrakech lancent un projet de recherche intitulé « Mine Intelligente et Connectée », dans le cadre de l’appel à projet Al Khawarizmi de la CNRST.
-                              Ce projet va donner lieu à des travaux de recherche grâce à 7 réalisations innovantes basées sur l’intelligence artificielleau profit de l'industrie minière .
+                              Ce projet va donner lieu à des travaux de recherche grâce à 7 réalisations innovantes basées sur l’intelligence artificielle au profit de l'industrie minière .
                             </p>
                         </div>
                     </div>
@@ -60,12 +60,12 @@
                 <div class="row counters">
                     <div class="col-6 text-center">
                         <span data-toggle="counter-up">7</span>
-                        <p>Réalisations</p>
+                        <p>{{ __('nav.realizations')}}</p>
                     </div>
 
                     <div class="col-6 text-center">
                         <span data-toggle="counter-up">6</span>
-                        <p>Partenaires</p>
+                        <p>{{ __('nav.partners')}}</p>
                     </div>
                 </div>
                 <div class="row counters pt-5">
@@ -73,12 +73,12 @@
                         <span class="row">
                             <div class="col-3">
                                 <span id="day" data-toggle="counter-up"></span>
-                                <p>Jours</p>
+                                <p>{{ __('about.days')}}</p>
                             </div>
                             <div class="col-1">:</div>
                             <div class="col-2">
                                 <span id="hour" data-toggle="counter-up"></span>
-                                <p>Heures</p>
+                                <p>{{ __('about.hours')}}</p>
                             </div>
                             <div class="col-1">:</div>
                             <div class="col-2">
@@ -88,9 +88,9 @@
                             <div class="col-1">:</div>
                             <div class="col-2">
                                 <span id="second" data-toggle="counter-up"></span>
-                                <p>Secondes</p>
+                                <p>{{ __('about.seconds')}}</p>
                             </div>
-                            <h1>Depuis le commencement du projet</h1>
+                            <h1>{{ __('about.projectstart')}}</h1>
                         </span>
                     </div>
                 </div>
