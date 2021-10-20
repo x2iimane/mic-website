@@ -8,12 +8,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/">Accueil</a></li>
-                <li class="nav-item {{ (Request::is('partenaires') ? 'activated' : '') }} {{ (Request::is('partenaires/*') ? 'activated' : '') }}"><a class="nav-link" href="/partenaires">Partenaires</a></li>
-                <li class="nav-item {{ (Request::is('realisations') ? 'activated' : '') }} {{ (Request::is('realisations/*') ? 'activated' : '') }}"><a class="nav-link" href="/realisations">Réalisations</a></li>
-                <li class="nav-item {{ (Request::is('actualites') ? 'activated' : '') }} {{ (Request::is('actualites/*') ? 'activated' : '') }}"><a class="nav-link" href="/actualites">Actualités</a></li>
+                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/">{{ __('nav.home') }}</a></li>
+                <li class="nav-item {{ (Request::is('partenaires') ? 'activated' : '') }} {{ (Request::is('partenaires/*') ? 'activated' : '') }}"><a class="nav-link" href="/partenaires">{{ __('nav.partners') }}</a></li>
+                <li class="nav-item {{ (Request::is('realisations') ? 'activated' : '') }} {{ (Request::is('realisations/*') ? 'activated' : '') }}"><a class="nav-link" href="/realisations">{{ __('nav.realizations') }}</a></li>
+                <li class="nav-item {{ (Request::is('actualites') ? 'activated' : '') }} {{ (Request::is('actualites/*') ? 'activated' : '') }}"><a class="nav-link" href="/actualites">{{ __('nav.news') }}</a></li>
                 <li class="nav-item {{ (Request::is('productions') ? 'activated' : '') }} {{ (Request::is('productions/*') ? 'activated' : '') }}"><a class="nav-link" href="/productions">Productions</a></li>
-                <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">À Propos</a></li>
+                <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('main.about') }}</a></li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">

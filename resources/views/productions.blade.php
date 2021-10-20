@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Productions scientifiques - Projet MIC</title>
+  <title>{{ __('production.scientificprodtitle') }}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,11 +23,11 @@
           <div class="container">
 
               <div class="d-flex justify-content-between align-items-center">
-                  <h2>Productions scientifiques</h2>
+                  <h2>{{ __('production.scientificprod') }}</h2>
 
                   <ol>
-                      <li><a href="/">Accueil</a></li>
-                      <li>Productions scientifiques</li>
+                      <li><a href="/">{{ __('nav.home') }}</a></li>
+                      <li>{{ __('production.scientificprod') }}</li>
                   </ol>
               </div>
           </div>
@@ -40,7 +40,7 @@
                       @if($productions->count() == 0)
                           <div class="card card-body" style="font-size: 24px">
                               <div class="text-center m-5">
-                                  Aucune production n'est trouvée
+                                  {{ __('production.noproduction') }}Aucune production n'est trouvée
                               </div>
                           </div>
                       @else
@@ -64,17 +64,17 @@
               </div>
               <div class="col-sm-12 col-md-4">
                   <div class="sidebar">
-                      <h3 class="sidebar-title">Rechercher</h3>
+                      <h3 class="sidebar-title">{{ __('main.search') }}</h3>
                       <div class="sidebar-item search-form">
                           <form action="\productions" method="get">
                               <input type="text" name="q" placeholder="Rechercher une production" value="{{$search_text}}">
                               <button type="submit"><i class="icofont-search"></i></button>
                           </form>
                       </div>
-                      <h3 class="sidebar-title">Productions récents</h3>
+                      <h3 class="sidebar-title">{{ __('main.currentProduction') }}</h3>
                       @if($recentProduction->count() == 0)
                           <p class="text-center">
-                              Aucune récente actualité
+                              {{ __('main.noCurrentProduction') }}
                           </p>
                       @else
                           @foreach($recentProduction as $production)
