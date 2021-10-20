@@ -35,6 +35,11 @@
         ],
         'profile' => [
             'profileText' => "Modifier votre profile",
+            'passwordText' => "Mot de pass",
+            'emailText' => "E-Mail",
+            'lastNameText' => "Nom",
+            'firtNameText' => "Prénom",
+
         ],
         'user' => [],
 
