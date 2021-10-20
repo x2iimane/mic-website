@@ -1,6 +1,7 @@
 <?php 
 
     return [
+<<<<<<< HEAD
         'actualities' => [
             'accessPartners' => "Partners Access - MIC",
             'addNew' => "Add a new actuality",
@@ -41,6 +42,12 @@
             'firtNameText' => "Firsname",
 
         ],
+=======
+        'actualities' => [],
+        'historical' =>[],
+        'production' => [],
+        'profile' => [],
+>>>>>>> 9623c3f0cc39eecf747355d41bdda705967768fe
         'user' => [],
 
         'actualitiesRoot' => "Actualités"

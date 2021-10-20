@@ -2,7 +2,7 @@
 
     return [
         'actualities' => [
-            'accessPartners' => "Acces Patenaire - MIC",
+            'accessPartners' => "Acces Partenaire - MIC",
             'addNew' => "Ajouter une nouvelle actualité",
             'title' => "Titre",
             'summary' =>'Resumé',

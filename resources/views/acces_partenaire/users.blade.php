@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Acces Patenaire - MIC</title>
+        <title>{{ __('users.partneraccessproject')}}</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
@@ -32,7 +32,7 @@
                 @enderror
                 <div class="justify-content-center row">
                     <div class="card card-body col-sm-12 col-md-10 bg-light  align-self-center">
-                        <h1 class="m-md-5 p-5" style="font-size: 40px;">Utilisateurs</h1>
+                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('users.users')}}</h1>
                         <div class="row pb-5">
                             <div class="pb-3 align-self-center col-sm-12 col-md-8 offset-md-1">
                                 <form action="/acces_partenaire/users" method="get">
@@ -41,7 +41,7 @@
                             </div>
                             <div class="pb-3 col-sm-12 col-md-2 d-grid gap-2">
                                 <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#add_user">
-                                    Ajouter un utilisateur
+                                    {{ __('users.adduser')}}
                                 </button>
                             </div>
 
@@ -52,18 +52,18 @@
                             <div class="modal-dialog" style="max-width: 650px;">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="add_user_label"><b>Ajouter un nouveau utilisaeur</b></h4>
+                                        <h4 class="modal-title" id="add_user_label"><b>{{ __('users.addnewuser')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <form class="form-outline" method="post" action="/acces_partenaire/users/create">
                                         @csrf
                                         <div class="modal-body">
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Nom</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.name')}}</label>
                                                 <div class="col-sm-4">
                                                     <input type="text" name="first_name" class="form-control">
                                                 </div>
-                                                <label class="col-sm-2 col-form-label">Prénom</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.firstname')}}</label>
                                                 <div class="col-sm-4">
                                                     <input type="text" name="last_name" class="form-control">
                                                 </div>
@@ -75,28 +75,28 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row align-middle">
-                                                <label class="col-sm-2 col-form-label">Mot de passe</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.password')}}</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" name="password" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row align-middle">
-                                                <label class="col-sm-2 col-form-label">Institut</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.institution')}}</label>
                                                 <div class="col-sm-10">
                                                     <select class="form-select" name="institut">
-                                                        <option value="cnrst">Centre National pour la Recherche Scientifique et Technique</option>
-                                                        <option value="ensias">École nationale supérieure d'informatique et d'analyse des systèmes</option>
-                                                        <option value="ensmr">Ecole Nationale Superieure Des Mines De Rabat</option>
-                                                        <option value="managem">Managem</option>
+                                                        <option value="cnrst">{{ __('users.cnrst')}}</option>
+                                                        <option value="ensias">{{ __('users.ensias')}}</option>
+                                                        <option value="ensmr">{{ __('users.ensmr')}}</option>
+                                                        <option value="managem">MANAGEM</option>
                                                         <option value="mascir">MAScIR</option>
-                                                        <option value="uca">Université Cadi Ayyad</option>
+                                                        <option value="uca">{{ __('users.uca')}}</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Ajouter l'utilisaeur</button>
-                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('users.adduser')}}</button>
+                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('users.cancel')}}</button>
                                         </div>
                                     </form>
                                 </div>
@@ -108,7 +108,7 @@
                             <div class="modal-dialog" style="max-width: 650px;">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="update_user_label"><b>Modifier un utilisateur</b></h4>
+                                        <h4 class="modal-title" id="update_user_label"><b>{{ __('users.modifyuser')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <form id="update_form" class="form-outline" method="post">
@@ -122,11 +122,11 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Nom</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.name')}}</label>
                                                 <div class="col-sm-4">
                                                     <input type="text" id="first_name" name="first_name" class="form-control">
                                                 </div>
-                                                <label class="col-sm-2 col-form-label">Prénom</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.firstname')}}</label>
                                                 <div class="col-sm-4">
                                                     <input type="text" id="last_name" name="last_name" class="form-control">
                                                 </div>
@@ -138,28 +138,28 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row align-middle">
-                                                <label class="col-sm-2 col-form-label">Mot de passe</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.password')}}</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" id="password" name="password" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row align-middle">
-                                                <label class="col-sm-2 col-form-label">Institut</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('users.institution')}}</label>
                                                 <div class="col-sm-10">
                                                     <select id="institut" class="form-select" name="institut">
-                                                        <option value="cnrst">Centre National pour la Recherche Scientifique et Technique</option>
-                                                        <option value="ensias">École nationale supérieure d'informatique et d'analyse des systèmes</option>
-                                                        <option value="ensmr">Ecole Nationale Superieure Des Mines De Rabat</option>
-                                                        <option value="managem">Managem</option>
+                                                        <option value="cnrst">{{ __('users.cnrst')}}</option>
+                                                        <option value="ensias">{{ __('users.ensias')}}</option>
+                                                        <option value="ensmr">{{ __('users.ensmr')}}</option>
+                                                        <option value="managem">MANAGEM</option>
                                                         <option value="mascir">MAScIR</option>
-                                                        <option value="uca">Université Cadi Ayyad</option>
+                                                        <option value="uca">{{ __('users.uca')}}</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Modifier l'utilisaeur</button>
-                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('users.modifytheuser')}}</button>
+                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('users.cancel')}}</button>
                                         </div>
                                     </form>
                                 </div>
@@ -171,17 +171,17 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="delete_user_label"><b>Supprimer un utilisaeur</b></h4>
+                                        <h4 class="modal-title" id="delete_user_label"><b>{{ __('users.deleteuser')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body ml-5">
                                         <div class="row">
-                                            <span>Êtes vous sûr que vous vouliez suprrimer l'utilisaeur</span><span>"<b id="user_name"></b>" ?</span>
+                                            <span>{{ __('users.deletewarning')}}</span><span>"<b id="user_name"></b>" ?</span>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a id="delete_user_button" role="button" class="btn btn-primary">Suprimmer l'utilisaeur</a>
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                        <a id="delete_user_button" role="button" class="btn btn-primary">{{ __('users.deletetheuser')}}</a>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('users.cancel')}}</button>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                         @if(!$users->count())
                             <div class='row align-self-center m-5'>
                                 <div class="p-5 border-5">
-                                    <h1>Aucun utilisateur à afficher</h1>
+                                    <h1>{{ __('users.nothingtoshow')}}</h1>
                                 </div>
                             </div>
                         @else
@@ -199,10 +199,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Nom</th>
-                                            <th scope="col">Prénom</th>
+                                            <th scope="col">{{ __('users.name')}}</th>
+                                            <th scope="col">{{ __('users.firstname')}}</th>
                                             <th scope="col">Email</th>
-                                            <th scope="col">Institut</th>
+                                            <th scope="col">{{ __('users.institution')}}</th>
                                             <th scope="col">Actions</th>
                                         </tr>
                                     </thead>
@@ -221,7 +221,7 @@
                                                 </a>
                                                 <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete_user"
                                                    onclick="getDeletingUser({{$user->id}},'{{$user->first_name}}','{{$user->last_name}}')">
-                                                    Supprimer
+                                                    {{ __('users.delete')}}
                                                 </a>
                                             </td>
                                         </tr>
