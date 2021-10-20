@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Actualités - Projet MIC</title>
+  <title>{{__('actualites.actualityTitle')}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,11 +24,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Actualités</h2>
+          <h2>{{__('news.actuality')}}</h2>
 
           <ol>
-            <li><a href="/">Accueil</a></li>
-            <li>Actualités</li>
+            <li><a href="/">{{__('news.home')}}</a></li>
+            <li>{{__('news.actuality')}}</li>
           </ol>
         </div>
 
@@ -44,7 +44,7 @@
                       <div class="row">
                           <div class="card card-body" style="font-size: 24px">
                               <div class="text-center m-5">
-                                  Aucune actualité n'est trouvée
+                                    {{__('main.noCurrentNews')}}
                               </div>
                           </div>
                       </div>
@@ -53,7 +53,7 @@
                           <h3 class="border-bottom">
                               <a data-bs-toggle="collapse" href="#filters" role="button" aria-expanded="false" aria-controls="filters">
                                   <i class="icofont-settings"></i>
-                                  Tri
+                                  {{__('news.shorting')}}
                               </a>
                           </h3>
                           <div class="collapse" id="filters">
@@ -88,12 +88,12 @@
                                           </h4>
                                           <div class="entry-meta text-start pt-3">
                                               <ul class="row">
-                                                  <li class="d-flex align-items-center col-6"><i class="icofont-notepad"></i>{{$actualite->type == 'evenement' ? 'Événement' : 'Actualité'}}</li>
+                                                  <li class="d-flex align-items-center col-6"><i class="icofont-notepad"></i>{{$actualite->type == 'evenement' ? __('news.event') : __('news.actuality')}}</li>
                                                   <li class="d-flex align-items-center col-6"><i class="icofont-wall-clock"></i><time datetime="{{$actualite->date}}">{{$actualite->date}}</time></li>
                                               </ul>
                                           </div>
                                           <div class="read-more">
-                                              <a href="\actualites\{{$actualite->id}}">Lire la suite...</a>
+                                              <a href="\actualites\{{$actualite->id}}"> {{__('realisations.readMore')}}</a>
                                           </div>
                                       </div>
                                   </div>
@@ -105,17 +105,17 @@
           </div>
             <div class="col-sm-12 col-md-4">
                 <div class="sidebar mt-5">
-                    <h3 class="sidebar-title">Rechercher</h3>
+                    <h3 class="sidebar-title">{{__('main.search')}}</h3>
                     <div class="sidebar-item search-form">
                         <form action="\actualites" method="get">
-                            <input type="text" name="q" placeholder="Rechercher une actualité" value="{{$search_text}}">
+                            <input type="text" name="q" placeholder="{{__('main.searchplaceholder')}}" value="{{$search_text}}">
                             <button type="submit"><i class="icofont-search"></i></button>
                         </form>
                     </div>
-                    <h3 class="sidebar-title">Actualités récents</h3>
+                    <h3 class="sidebar-title">{{__('main.currentNews')}}</h3>
                     @if($recentActualites->count() == 0)
                         <p class="text-center">
-                            Aucune récente actualité
+                            {{__('main.noCurrentNews')}}
                         </p>
                     @else
                         <div style="margin-left: 10px;">

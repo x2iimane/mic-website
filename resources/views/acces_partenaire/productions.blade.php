@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Acces Patenaire - MIC</title>
+        <title>{{ __('partnersAccess.actualities.accessPartners')}}</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
@@ -26,7 +26,7 @@
                 @enderror
                 <div class="justify-content-center row">
                     <div class="card card-body col-sm-12 col-md-10 bg-light align-self-center">
-                        <h1 class="m-md-5 p-5" style="font-size: 40px;">Productions scientifiques</h1>
+                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('partnersAccess.production.scienticProduction')}}</h1>
                         <div class="row pb-5">
                             <div class="pb-3 align-self-center col-sm-12 col-md-8 offset-md-1">
                                 <form action="/acces_partenaire/productions" method="get">
@@ -35,7 +35,7 @@
                             </div>
                             <div class="pb-3 col-sm-12 col-md-2 d-grid gap-2">
                                 <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#add_production">
-                                    Ajouter une production
+                                    {{ __('partnersAccess.production.addproducton')}}
                                 </button>
                             </div>
                         </div>
@@ -45,34 +45,34 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="add_production_label"><b>Ajouter une nouvelle production</b></h4>
+                                        <h4 class="modal-title" id="add_production_label"><b>{{ __('partnersAccess.production.addproducton')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <form class="form-outline" method="post" action="/acces_partenaire/productions/create" enctype="multipart/form-data">
                                         @csrf
                                         <div class="modal-body">
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Titre</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.actualities.title')}}</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" name="titre" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Resumé</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.actualities.summary')}}</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" name="resume" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Lien</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.production.linkText')}}</label>
                                                 <div class="col-sm-10">
                                                     <input type="url" name="lien" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Ajouter la production</button>
-                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('partnersAccess.production.addproducton')}}</button>
+                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.actualities.cancel')}}</button>
                                         </div>
                                     </form>
                                 </div>
@@ -84,7 +84,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="update_production_label"><b>Modifier une production</b></h4>
+                                        <h4 class="modal-title" id="update_production_label"><b>{{ __('partnersAccess.production.modify')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <form id="update_form" class="form-outline" method="post" enctype="multipart/form-data">
@@ -98,27 +98,27 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Titre</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.actualities.title')}}</label>
                                                 <div class="col-sm-10">
                                                     <input id="titre" type="text" name="titre" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Resumé</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.actualities.summary')}}</label>
                                                 <div class="col-sm-10">
                                                     <input id="resume" type="text" name="resume" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label class="col-sm-2 col-form-label">Lien</label>
+                                                <label class="col-sm-2 col-form-label">{{ __('partnersAccess.production.linkText')}}</label>
                                                 <div class="col-sm-10">
                                                     <input id="lien" type="url" name="lien" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Modifier la production</button>
-                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('partnersAccess.production.modify')}}</button>
+                                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.actualities.cancel')}}</button>
                                         </div>
                                     </form>
                                 </div>
@@ -130,17 +130,17 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="delete_production_label"><b>Supprimer Production</b></h4>
+                                        <h4 class="modal-title" id="delete_production_label"><b>{{ __('partnersAccess.production.delete')}}</b></h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                         <div class="modal-body ml-5">
                                             <div class="row">
-                                                <span>Êtes vous sûr que vous vouliez suprrimer la production</span><span>"<b id="production_title"></b>" ?</span>
+                                                <span>{{ __('partnersAccess.production.deleteConfirmation')}}</span><span>"<b id="production_title"></b>" ?</span>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <a id="delete_production_button" role="button" class="btn btn-primary">Suprimmer la production</a>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                            <a id="delete_production_button" role="button" class="btn btn-primary">{{ __('partnersAccess.production.delete')}}</a>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.actualities.cancel')}}</button>
                                         </div>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@
                         @if(!$productions->count())
                             <div class='row align-self-center m-5'>
                                 <div class="p-5 border-5">
-                                    <h1>Aucune production à afficher</h1>
+                                    <h1>{{ __('partnersAccess.production.noproduction')}}</h1>
                                 </div>
                             </div>
                         @else
@@ -158,9 +158,9 @@
                                     <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Titre</th>
-                                        <th scope="col">Resumé</th>
-                                        <th scope="col">Lien</th>
+                                        <th scope="col">{{ __('partnersAccess.actualities.title')}}</th>
+                                        <th scope="col">{{ __('partnersAccess.actualities.summary')}}</th>
+                                        <th scope="col">{{ __('partnersAccess.production.linkText')}}</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                     </thead>
@@ -173,8 +173,12 @@
                                             <td><a href="{{$production->lien}}">{{substr($production->lien,0,20)}}...</a></td>
                                             <td class="w-25">
                                                 <a class="btn btn-success" href="/productions/{{$production->id}}">Afficher</a>
-                                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#update_production" onclick="getUpdatingProduction({{$production->id}},'{{$production->titre}}','{{$production->resume}}', '{{$production->lien}}')">Modifier</a>
-                                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete_production" onclick="getDeletingProduction({{$production->id}},'{{$production->titre}}')">Supprimer</a>
+                                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#update_production" onclick="getUpdatingProduction({{$production->id}},'{{$production->titre}}','{{$production->resume}}', '{{$production->lien}}')">
+                                                    {{ __('partnersAccess.production.modifying')}}
+                                                </a>
+                                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete_production" onclick="getDeletingProduction({{$production->id}},'{{$production->titre}}')">
+                                                    {{ __('partnersAccess.production.deleting')}}
+                                                </a>
                                             </td>
                                         </tr>
                                     @endforeach

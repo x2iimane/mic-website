@@ -1,7 +1,16 @@
 <?php
 
+$description1 = "After years of brainstorming and studying about twenty issues in the mining production chain. The steering committee of the Connected Smart Mine project has given rise to seven objectives that will give rise to ";
+$description1 .= "innovative industrial achievements, scientific publications in the field of Industry 4.0 and opportunities for young Moroccans to develop skills in digitization of the sector. industrial in Morocco and Africa.";
+
+$description2 = "These achievements will be piloted by a set of teams of industry experts and research professors in computer science and materials science through seven thesis subjects:";
+
 return [
     'home' => "Home",
+    'description' => [
+        'description1' => $description1,
+        'description2' => $description2,
+    ],
     'realizationTitle' => "Realizations - MIC Project",
     'realizations' => "Realizations",
     'onlineAnalizer' => "Online analyzer",

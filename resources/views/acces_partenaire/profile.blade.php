@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Acces Patenaire - MIC</title>
+        <title>{{ __('partnersAccess.actualities.accessPartners')}}</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
@@ -15,7 +15,7 @@
                 <div class="modal-dialog" style="max-width: 650px;">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="update_user_label"><b>Modifier votre profile</b></h4>
+                            <h4 class="modal-title" id="update_user_label"><b>{{ __('partnersAccess.profile.profileText')}}</b></h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form class="form-outline" method="post" action="/profile/edit">
@@ -36,8 +36,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Modifier votre profile</button>
-                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                <button type="submit" class="btn btn-primary">{{ __('partnersAccess.profile.profileText')}}</button>
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.actualities.cancel')}}</button>
                             </div>
                         </form>
                     </div>
