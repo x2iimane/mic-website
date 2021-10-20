@@ -16,7 +16,7 @@
                 <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('nav.about') }}</a></li>
             </ul>
             <ul >
-                <button type="button" class="btn btn-primary">langue</button>
+                <button type="button" class="btn btn-primary">fr/ang</button>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
