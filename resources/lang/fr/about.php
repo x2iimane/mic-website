@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'presentation' => 'Présentation',
     'projectdesc' => "Description Du Projet",
     'days' => "Jours",

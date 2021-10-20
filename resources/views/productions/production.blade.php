@@ -25,8 +25,8 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Productions</h2>
                 <ol>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/productions">Productions scientifiques</a></li>
+                    <li><a href="/">{{ __('nav.home') }}</a></li>
+                    <li><a href="/productions">{{ __('production.scientificprod') }}</a></li>
                     <li>{{ $production->titre }}</li>
                 </ol>
             </div>
@@ -40,12 +40,12 @@
                         <h1><B><span style="color: #566885;">{{ $production->titre }}</span></B></h1>
                     </div>
                     <div class="text-start p-5">
-                        <h3>Resumé</h3>
+                        <h3>{{ __('production.summary')}}</h3>
                         <p class="pt-5">
                             {{$production->resume}}
                         </p>
                         <h5 class="pt-3 text-end">
-                            <a href="{{$production->lien}}">Consulter l'article</a>
+                            <a href="{{$production->lien}}">{{ __('production.readarticle')}}</a>
                         </h5>
                     </div>
                 </div>

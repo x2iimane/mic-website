@@ -62,7 +62,7 @@
                     <img src="<?php echo url('/'); ?>/img/industriemine.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-7">
-                    <h2 class="pt-4 pb-4">{{__('main.mininIndustry')}}</h2>
+                    <h2 class="pt-4 pb-4">{{__('main.miningIndustry')}}</h2>
                     <p>
                      L’industrie minière est caractérisée par un environnement économique en permanence sous pression et très
                      contraignant (évolution imprévisible des prix des matières premières, épuisement des réserves minières, … etc.).

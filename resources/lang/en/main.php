@@ -11,15 +11,10 @@ return [
     'industryVerion' =>'Industry 4.0',
     'partnership' => "Partnership",
     'search' => "Search",
-    'currentNews' => "Currents News",
-    'noCurrentNews' => "No Currents news",
-    'currentProduction' => "Currents Productions",
-    'noCurrentProduction' => "No Currents productions",
+    'currentNews' => "Current News",
+    'noCurrentNews' => "No Current News",
+    'currentProduction' => "Current Productions",
+    'noCurrentProduction' => "No Current Productions",
     'partnerAccess' => "Partners Access",
-    'searchplaceholder' => "Search an actuality",
-
-
-
-
-
+    'searchplaceholder' => "Search For Some News",
 ];

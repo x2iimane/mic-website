@@ -6,5 +6,7 @@ return [
     'scientificprod' => "Scientific Productions",
     'noproduction' => "No Production Found",
     'searchproduction' => "Search Production",
-    'readmore' => 'Read More...'
+    'readmore' => 'Read More...',
+    'summary' => 'Summary',
+    'readarticle' => "Read the Article",
 ];
