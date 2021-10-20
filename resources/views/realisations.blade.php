@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Réalisations - Projet MIC</title>
+  <title>{{__('realisations.realizationTitle')}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,11 +24,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Réalisations</h2>
+          <h2>{{__('realisations.realizations')}}</h2>
 
           <ol>
-            <li><a href="/">Accueil</a></li>
-            <li>Réalisations</li>
+            <li><a href="/">{{__('realisations.home')}}</a></li>
+            <li>{{__('realisations.realizations')}}</li>
           </ol>
         </div>
 
@@ -43,9 +43,13 @@
           <div class="col-sm-12 col-md-10 entries">
               <div class="pb-5 mb-2">
                   <h3>
-                      <p> Après des années de brainstorming et d’étude d’une vingtaine de problématiques dans la chaîne de production minière. Le comité de pilotage du projet Mine intelligente connectée a donné lieu à sept objectifs qui feront naissance à des réalisations industrielles innovantes, des publications scientifiques au domaine de l’industrie 4.0 et des opportunités pour les jeunes marocains afin de monter en compétences en digitalisation du secteur industrielle au Maroc et en Afrique. </p>
+                      <p> Après des années de brainstorming et d’étude d’une vingtaine de problématiques dans la chaîne de production minière. Le comité de pilotage du projet Mine intelligente connectée a donné lieu à sept objectifs qui feront naissance à des réalisations industrielles innovantes, des publications scientifiques au domaine de l’industrie 4.0 
+                          et des opportunités pour les jeunes marocains afin de monter en compétences en digitalisation du secteur industrielle au Maroc et en Afrique. </p>
                       
-                      <p> Ces réalisations seront pilotées par un ensemble d'équipes d’experts en industrie et des professeurs chercheurs en informatique et en sciences des matériaux à travers sept sujets de thèses: </p>
+                      <p> Ces réalisations seront pilotées par un ensemble d'équipes d’experts en industrie et 
+                          des professeurs chercheurs en informatique et en sciences des 
+                          matériaux à travers sept sujets de thèses: 
+                        </p>
                   </h3>
               </div>
                 <article class="entry">
@@ -57,14 +61,14 @@
                           </div>
                           <div class="col-sm-10 col-md-8">
                               <h2 class="entry-title px-4">
-                                <a href="\realisations\1">Analyseur en ligne</a>
+                                <a href="\realisations\1">{{__('realisations.onlineAnalizer')}}</a>
                               </h2>
                               <div class="entry-content">
                                   <h4>
-                                      Développement d’un analyseur en ligne basé sur l’usage de la technologie de l'intelligence artificielle pour la détermination temps réel des teneurs minéralogiques au sein des unités de flottation.
+                                    {{__('realisations.content1')}}
                                   </h4>
                                   <div class="read-more">
-                                      <a href="\realisations\1">Lire la suite...</a>
+                                      <a href="\realisations\1">{{__('realisations.readMore')}}</a>
                                   </div>
                               </div>
                           </div>
@@ -81,14 +85,14 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4">
-                              <a href="\realisations\2">Digital Twin for Mine Value Chain Optimizations</a>
+                              <a href="\realisations\2">{{__('realisations.title2')}}</a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Couplant simulation et données, le jumeau numérique colle au plus près du système réel qu’il modélise. Le secteur minier l’utilise pour surveiller, maintenir et optimiser ses machines et ses produits et éventuellement améliorer les performances opérationnelles des unités de production minières.
+                                {{__('realisations.content2')}}
                               </h4>
                               <div class="read-more">
-                                  <a href="\realisations\2">Lire la suite...</a>
+                                  <a href="\realisations\2">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>
@@ -104,14 +108,14 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4">
-                              <a href="\realisations\3">Prototype de tri pour la valorisation des ressources minérales</a>
+                              <a href="\realisations\3">{{__('realisations.title3')}}</a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Développement des méthodes de technologie de tri et application des méthodes d’IA pour la valorisation des ressources à faible teneur.
+                                 {{__('realisations.content3')}}
                               </h4>
                               <div class="read-more">
-                                  <a href="\realisations\3">Lire la suite...</a>
+                                  <a href="\realisations\3">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>
@@ -127,16 +131,17 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4" style="top : 55%">
-                              <a href="\realisations\4">Prédiction des instabilités des terrains et prévention des chutes de blocs en
-                                  mines souterraines par IA</a>
+                              <a href="\realisations\4">
+                                    {{__('realisations.title4')}}
+                                </a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Prédiction des instabilités des terrains et prévention des chutes de blocs en mines souterraines par intelligence artificielle.
+                                {{__('realisations.title4')}}
                               </h4>
                               <br>
                               <div class="read-more">
-                                  <a href="\realisations\4">Lire la suite...</a>
+                                  <a href="\realisations\4">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>
@@ -152,14 +157,16 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4" style="top : 55%">
-                              <a href="\realisations\5">Digitalisation de la Sécurité de la Mine par Vision par Ordinateur basée sur l’IA</a>
+                              <a href="\realisations\5">
+                                {{__('realisations.title5')}}
+                            </a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Digitalisation de la Sécurité de la Mine par Vision par Ordinateur basée sur l’IA
+                              {{__('realisations.title5')}}
                               </h4>
                               <div class="read-more">
-                                  <a href="\realisations\5">Lire la suite...</a>
+                                  <a href="\realisations\5">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>
@@ -175,15 +182,15 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4" style="top : 55%">
-                              <a href="\realisations\6"> Predictive maintenance</a>
+                              <a href="\realisations\6"> {{__('realisations.title6')}}</a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Predictive maintenance
+                              {{__('realisations.title6')}}
                               </h4>
                               <br><br>
                               <div class="read-more">
-                                  <a href="\realisations\6">Lire la suite...</a>
+                                  <a href="\realisations\6">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>
@@ -199,15 +206,15 @@
                       </div>
                       <div class="col-sm-10 col-md-8">
                           <h2 class="entry-title px-4" style="top : 55%">
-                              <a href="\realisations\7">Energy efficiency</a>
+                              <a href="\realisations\7">{{__('realisations.title7')}}</a>
                           </h2>
                           <div class="entry-content">
                               <h4>
-                                  Application pour l'Efficacité Energétique dans la Mine en Intelligence Artificielle
+                                {{__('realisations.content7')}}
                               </h4>
                               <br><br>
                               <div class="read-more">
-                                  <a href="\realisations\7">Lire la suite...</a>
+                                  <a href="\realisations\7">{{__('realisations.readMore')}}</a>
                               </div>
                           </div>
                       </div>

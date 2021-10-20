@@ -7,7 +7,7 @@ return [
     'name' => 'PROJET MIC',
     'description' => "Mine Intelligente Connectée",
     'projectPresentation' =>'Presentation Du Projet',
-    'mininIndustry' =>'Industrie Minière',
+    'miningIndustry' =>'Industrie Minière',
     'industryVerion' =>'Industrie 4.0',
     'partnership' => "Partenariats",
     'search' => "Recherche",
@@ -16,12 +16,7 @@ return [
     'currentProduction' => "Productions récents",
     'noCurrentProduction' => "Aucune récente production",
     'partnerAccess' => "Accès Partenaires",
-
-
-
-
-
-
+    'searchplaceholder' => "Rechercher une actualité",
 
 
 ];

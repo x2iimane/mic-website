@@ -7,7 +7,7 @@ return [
     'name' => 'MIC PROJECT',
     'description' => "Intelligent Connected Mine",
     'projectPresentation' =>'Project Presentation',
-    'mininIndustry' =>'Mining Industry',
+    'miningIndustry' =>'Mining Industry',
     'industryVerion' =>'Industry 4.0',
     'partnership' => "Partnership",
     'search' => "Search",
@@ -16,6 +16,8 @@ return [
     'currentProduction' => "Currents Productions",
     'noCurrentProduction' => "No Currents productions",
     'partnerAccess' => "Partners Access",
+    'searchplaceholder' => "Search an actuality",
+
 
 
 

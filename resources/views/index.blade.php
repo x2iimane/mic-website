@@ -107,7 +107,7 @@
                     <h3 class="sidebar-title">{{__('main.search')}}</h3>
                     <div class="sidebar-item search-form">
                         <form action="\actualites" method="get">
-                            <input type="text" name="q" placeholder="Rechercher une actualité">
+                            <input type="text" name="q" placeholder="{{__('main.searchplaceholder')}} ">
                             <button type="submit"><i class="icofont-search"></i></button>
                         </form>
                     </div>
