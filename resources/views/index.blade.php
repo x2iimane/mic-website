@@ -5,7 +5,7 @@
   <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>MIC PROJECT</title>
+    <title> {{ __('main.name')}} </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -37,11 +37,11 @@
         <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
             <div class="gallery-cell text-center">
                 <img src="<?php echo url('/'); ?>/img/mic.png" class="d-inline-block align-middle mr-2">
-                <h2>Mine Intelligente Connectée</h2>
+                <h2>{{ __('main.description') }}</h2> </h2>
             </div>
             <div class="gallery-cell text-center">
                 <img src="<?php echo url('/'); ?>/img/mic.png" class="d-inline-block align-middle mr-2">
-                <h2>Mine Intelligente Connectée</h2>
+                <h2>{{ __('main.description') }}</h2>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
             <div class="row">
               <div class="col-md-8">
                 <div class="section-title">
-                  <h1>Présentation du Projet</h1>
+                  <h1>{{__('main.projectPresentation')}}</h1>
                 </div>
 
                 <div class="row p-4" data-aos="fade-up">
@@ -62,7 +62,7 @@
                     <img src="<?php echo url('/'); ?>/img/industriemine.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-7">
-                    <h2 class="pt-4 pb-4">L’industrie minière.</h2>
+                    <h2 class="pt-4 pb-4">{{__('main.mininIndustry')}}</h2>
                     <p>
                      L’industrie minière est caractérisée par un environnement économique en permanence sous pression et très
                      contraignant (évolution imprévisible des prix des matières premières, épuisement des réserves minières, … etc.).
@@ -81,7 +81,7 @@
                     <img src="<?php echo url('/'); ?>/img/industrie4.jpeg" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-7 order-2 order-md-1">
-                    <h2 class="pt-4 pb-4">Industrie 4.0</h2>
+                    <h2 class="pt-4 pb-4">{{__('main.industryVerion')}} </h2>
                     <p>
                      La transformation digitale de l’industrie (industrie 4.0) est basée sur l’usage de technologies digitales pour
                      l’élaboration de solutions innovantes pour le pilotage et la supervision des unités de production notamment dans l’industrie minière.
@@ -94,7 +94,7 @@
                     <img src="<?php echo url('/'); ?>/img/partenariat.png" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-7">
-                    <h2 class="pt-4 pb-4">Partenariats</h2>
+                    <h2 class="pt-4 pb-4">{{__('main.partnership')}} </h2>
                     <p>Dans ce sens, Managem, MASciR et les partenaires académiques : l’Ecole Nationale Supérieure des Mines de Rabat, l’ENSIAS
                     (Université M5 Rabat) et l’Université Cadi Ayyad de Marrakech lancent un projet de recherche intitulé « Mine Intelligente et
                     Connectée », dans le cadre de l’appel à projet Al Khawarizmi de la CNRST. Ce projet va donner lieu à des travaux de recherche
@@ -104,17 +104,17 @@
             </div>
             <div class="col-md-4">
                 <div class="sidebar">
-                    <h3 class="sidebar-title">Rechercher</h3>
+                    <h3 class="sidebar-title">{{__('main.search')}}</h3>
                     <div class="sidebar-item search-form">
                         <form action="\actualites" method="get">
                             <input type="text" name="q" placeholder="Rechercher une actualité">
                             <button type="submit"><i class="icofont-search"></i></button>
                         </form>
                     </div>
-                    <h3 class="sidebar-title">Actualités récents</h3>
+                    <h3 class="sidebar-title"> {{__('main.currentNews')}} </h3>
                     @if($recentActualites->count() == 0)
                         <p class="text-center">
-                            Aucune récente actualité
+                          {{__('main.noCurrentNews')}}
                         </p>
                     @else
                         <div style="margin-left: 10px;">
@@ -133,10 +133,10 @@
                             </div>
                         </div>
                     @endif
-                    <h3 class="sidebar-title">Productions récents</h3>
+                    <h3 class="sidebar-title">{{__('main.currentProduction')}}</h3>
                     @if($recentProduction->count() == 0)
                         <p class="text-center">
-                            Aucune récente actualité
+                          {{__('main.noCurrentProduction')}}
                         </p>
                     @else
                         @foreach($recentProduction as $production)
