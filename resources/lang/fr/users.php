@@ -20,7 +20,7 @@ return [
     'modifytheuser' => "Modifier l'Utilisateur",
     'deleteuser' => 'Supprimer un Utilisateur',
     'deletetheuser' => "Supprimer l'Utilisateur",
-    'deletewarning' => "Êtes vous sûr que vous voulez supprimer l'Utilisateur?"
+    'deletewarning' => "Êtes vous sûr que vous voulez supprimer l'Utilisateur?",
     'projectstart' => 'Since The Project Started',
     'nothingtoshow' => "Aucun Utilisateur à Afficher!",
     'delete' => "Supprimer",
