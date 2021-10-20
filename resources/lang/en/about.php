@@ -8,4 +8,5 @@ return [
     'hours' => "Hours",
     'seconds' => 'Seconds',
     'projectstart' => 'Since The Project Started',
+    'towardsmartmine' => "Towards a Connected Smart Mine",
 ];

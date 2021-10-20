@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Partenaires</h2>
+          <h2>{{ __('nav.partners') }}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-			<li><a href="/partenaires">Partenaires</a></li>
+            <li><a href="/">{{ __('nav.home') }}</a></li>
+			<li><a href="/partenaires">{{ __('nav.partners') }}</a></li>
             <li>UCA</li>
           </ol>
         </div>
@@ -47,7 +47,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/uca/uca1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Présentation</h3>
+            <h3 class="pt-3">{{ __('about.presentation') }}</h3>
             <p>
               Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA.
 			  Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA. Présentation de UCA.
@@ -61,7 +61,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/uca/uca1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-3">Contribution en projet</h3>
+            <h3 class="pt-3">{{ __('partners.contribution') }}</h3>
             <p>
               description de Contribution en projet description de Contribution en projet description de Contribution en projet description de Contribution en projet
 			  description de Contribution en projet description de Contribution en projet description de Contribution en projet description de Contribution en projet
@@ -75,7 +75,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/uca/uca1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Domaine d’expertise et bref historique</h3>
+            <h3 class="pt-3">{{ __('partners.expertisehistory') }}</h3>
             <p>
 				domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici.
 				domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici.
@@ -100,7 +100,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
+                  <h3>{{ __('partners.address') }}</h3>
                   <p> Bd. Abdelkrim Khattabi, B.P. 511 - Marrakech
 				  </p>
                 </div>
@@ -108,7 +108,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-cloud"></i>
-                  <h3>Site Web</h3>
+                  <h3>{{ __('partners.website') }}</h3>
                   <a href="http://www.uca.ma/"><p>www.uca.ma</p></a>
                 </div>
               </div>
@@ -122,7 +122,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Téléphone</h3>
+                  <h3>{{ __('partners.telephone') }}</h3>
                   <p>(+212) 524 437 741 <br>(+212) 524 434 814 </p>
                 </div>
               </div>

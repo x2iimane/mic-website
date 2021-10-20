@@ -8,4 +8,5 @@ return [
     'hours' => "Heures",
     'seconds' => 'Secondes',
     'projectstart' => 'Depuis le commencement du projet',
+    'towardsmartmine' => "Vers une Mine Intelligente Connectée",
 ];

@@ -36,7 +36,7 @@
                             <img src="<?php echo url('/'); ?>/img/about/partnership.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0">
-                            <h1 class="pb-2">Vers une Mine Intelligente Connectée</h1>
+                            <h1 class="pb-2">{{ __('about.towardsmartmine')}}</h1>
                             <h2 class="font-italic pb-3">{{ __('about.projectdesc')}}</h2>
                             <p>
                               L’industrie minière est caractérisée par un environnement économique en permanence sous pression et très contraignant (évolution imprévisible des prix des

@@ -13,12 +13,12 @@
                 <li class="nav-item {{ (Request::is('realisations') ? 'activated' : '') }} {{ (Request::is('realisations/*') ? 'activated' : '') }}"><a class="nav-link" href="/realisations">{{ __('nav.realizations') }}</a></li>
                 <li class="nav-item {{ (Request::is('actualites') ? 'activated' : '') }} {{ (Request::is('actualites/*') ? 'activated' : '') }}"><a class="nav-link" href="/actualites">{{ __('nav.news') }}</a></li>
                 <li class="nav-item {{ (Request::is('productions') ? 'activated' : '') }} {{ (Request::is('productions/*') ? 'activated' : '') }}"><a class="nav-link" href="/productions">Productions</a></li>
-                <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('main.about') }}</a></li>
+                <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('nav.about') }}</a></li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
                     <form action="/recherche" class="form-outline d-flex mt-2">
-                        <input class="form-control" type="text" name="q" placeholder="Rechercher" size="25" @if(isset($searched_text)) value="{{$searched_text}} @endif">
+                        <input class="form-control" type="text" name="q" placeholder="{{ __('main.search') }}" size="25" @if(isset($searched_text)) value="{{$searched_text}} @endif">
                     </form>
                 </li>
                 @guest

@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Partenaires</h2>
+          <h2>{{ __('nav.partners') }}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-			<li><a href="/partenaires">Partenaires</a></li>
+            <li><a href="/">{{ __('nav.home') }}</a></li>
+			<li><a href="/partenaires">{{ __('nav.partners') }}</a></li>
             <li>MANAGEM</li>
           </ol>
         </div>
@@ -39,7 +39,7 @@
       <div class="container col-sm-11 col-md-8">
 
           <div class="section-title">
-              <h1><B><span style="color: #566885;">Managem</span></B></h1>
+              <h1><B><span style="color: #566885;">MANAGEM</span></B></h1>
           </div>
 
         <div class="row" data-aos="fade-up">
@@ -47,7 +47,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/managem/managem1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4">
-            <h3 class="pt-3">Présentation</h3>
+            <h3 class="pt-3">{{ __('about.presentation') }}</h3>
             <p>
               Managem est un groupe minier international, créé en 1928 et implanté dans 9 pays d'Afrique. Un acteur
 			  minier intégré, avec une expertise tout au long de la chaîne de valeur : de l'exploration, l'extraction
@@ -64,7 +64,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/managem/managem2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-3">Contribution en projet</h3>
+            <h3 class="pt-3">{{ __('partners.contribution') }}</h3>
             <p>
               Managem a foi que les mines intelligentes sont l’avenir de l’exploitation minière. Il croit également au
 			  pouvoir de la collaboration et du partage des connaissances pour améliorer l’entreprise. Grâce à la
@@ -84,7 +84,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/managem/managem3.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 ">
-            <h3 class="pt-3">Domaine d’expertise et bref historique</h3>
+            <h3 class="pt-3">{{ __('partners.expertisehistory') }}</h3>
             <p>Managem est un acteur minier intégré, avec une expertise tout au long de la chaîne de valeur : de l'exploration, l'extraction
 			et le traitement des minerais jusqu'à la commercialisation des matières premières. Cette aventure a commencé dès que Jean Epinat,
 			un industriel français en visite au Maroc en 1928, découvre des arséniates de cuivre vendus à des fins domestiques sur les étals
@@ -113,14 +113,14 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
+                  <h3>{{ __('partners.address') }}</h3>
                   <p>Twin Center, Tour A, Angle Boulevards Zerktouni and Al Massira Al Khadra, BP 5199, Casablanca. </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-cloud"></i>
-                  <h3>Site Web</h3><br>
+                  <h3>{{ __('partners.website') }}</h3><br>
                   <a href="http://www.managemgroup.com/"><p>www.managemgroup.com</p></a>
                 </div>
               </div>
@@ -134,7 +134,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Téléphone</h3>
+                  <h3>{{ __('partners.telephone') }}</h3>
                   <p><br>(+212) 5 22 95 65 65</p>
                 </div>
               </div>

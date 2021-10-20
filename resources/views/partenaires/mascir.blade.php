@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Partenaires</h2>
+          <h2>{{ __('nav.partners') }}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-			<li><a href="/partenaires">Partenaires</a></li>
+            <li><a href="/">{{ __('nav.home') }}</a></li>
+			<li><a href="/partenaires">{{ __('nav.partners') }}</a></li>
             <li>MaSciR</li>
           </ol>
         </div>
@@ -39,7 +39,7 @@
       <div class="container col-8">
 
           <div class="section-title">
-              <h1><B><span style="color: #566885;">Mascir</span></B></h1>
+              <h1><B><span style="color: #566885;">MASCIR</span></B></h1>
           </div>
 
         <div class="row" data-aos="fade-up">
@@ -47,7 +47,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/mascir/mascir1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Présentation</h3>
+            <h3 class="pt-3">{{ __('about.presentation') }}</h3>
             <p>
               La Fondation MAScIR est une association à but non lucratif qui relève de l’Université Mohammed VI Polytechnique.
 			  Créée en 2007, elle vise la promotion et le développement de pôles de recherche technologique dans les domaines
@@ -69,7 +69,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/mascir/mascir2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-3">Mission de MaSciR</h3>
+            <h3 class="pt-3">{{ __('partners.missionmascir') }}</h3>
             <p>
               La Fondation a pour objet de promouvoir et de développer au Maroc des pôles de recherche et de développement technologique
 			  répondant aux besoins du marché dans les secteurs de la nanotechnologie, la biotechnologie, la technologie numérique,
@@ -94,7 +94,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/mascir/mascir3.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Contribution en projet</h3>
+            <h3 class="pt-3">{{ __('partners.contribution') }}</h3>
             <p>
 				La fondation MASciR  apporte au projet ses compétences en IA, traitement des images et technologies de capteurs, ainsi elle assure la gestion du projet
 				à travers la mise en place des comités  et l’organisation des réunions et workshops afin de garantir le suivi continu de l’avancement du projet.
@@ -117,14 +117,14 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
+                  <h3>{{ __('partners.address') }}</h3>
                   <p>Rue Mohamed Al Jazouli Madinat Al Irfane Rabat Maroc، Rabat. </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-cloud"></i>
-                  <h3>Site Web</h3>
+                  <h3>{{ __('partners.website') }}</h3>
                   <a href="http://www.mascir.com/"><p>www.mascir.com</p></a>
                 </div>
               </div>
@@ -138,7 +138,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Téléphone</h3>
+                  <h3>{{ __('partners.telephone') }}</h3>
                   <p>(+212) 5 30 27 98 75</p>
                 </div>
               </div>

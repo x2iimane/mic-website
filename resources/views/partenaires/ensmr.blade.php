@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Partenaires</h2>
+          <h2>{{ __('nav.partners') }}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-			<li><a href="/partenaires">Partenaires</a></li>
+            <li><a href="/">{{ __('nav.home') }}</a></li>
+			<li><a href="/partenaires">{{ __('nav.partners') }}</a></li>
             <li>ENSMR</li>
           </ol>
         </div>
@@ -39,7 +39,7 @@
       <div class="container col-sm-11 col-md-8">
 
           <div class="section-title">
-              <h1><B><span style="color: #566885;">Ensmr</span></B></h2>
+              <h1><B><span style="color: #566885;">ENSMR</span></B></h2>
           </div>
 
         <div class="row" data-aos="fade-up">
@@ -47,7 +47,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/ensmr/ensmr1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Présentation</h3>
+            <h3 class="pt-3">{{ __('about.presentation') }}</h3>
             <p>
               Fondée en 1972, L’Ecole Nationale Supérieure des Mines de Rabat (Ex ENIM) est érigée en établissementpublic doté de la
 			  personnalité morale et de l’autonomie financière depuis 1982. Elle est placée sous la tutelle de l’autorité gouvernementale
@@ -63,7 +63,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/ensmr/ensmr2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-3">Mission de Ensmr</h3>
+            <h3 class="pt-3">{{ __('partners.missionensmr') }}</h3>
             <p>
               Les missions de l’Ecole sont développées par la Loi n°89-12 relative à l’Ecole Nationale Supérieure des Mines de Rabat promulguée par Dahir n°1-14-08 du 20
 			  rabii II 1435 (20 février 2014) comme suit:
@@ -86,7 +86,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/ensmr/ensmr3.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Cycles et Formations</h3>
+            <h3 class="pt-3">{{ __('partners.cycletraining') }}</h3>
             <p>
 				L’Ecole dispense des formations et des enseignements organisés en cycles, filières et modules et sanctionnés par des diplômes nationaux.<br>
 				La durée de chaque cycle et la liste des diplômes y afférents sont fixées par voie réglementaire.<br>
@@ -104,7 +104,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/ensmr/ensmr4.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-3">Domaine d’expertise et bref historique</h3>
+            <h3 class="pt-3">{{ __('partners.expertisehistory') }}</h3>
             <p>
               Initialement, la mission principale de l’ENSMR (ex ENIM) a été de former des ingénieurs pour le secteur minier et l’industrie minérale.
 			  Ainsi entre 1975 et 1983, 447 ingénieurs ont été formés dans les domaines de la Géologie, des Mines et traitement des Minerais et 61
@@ -135,23 +135,23 @@
             <img src="<?php echo url('/'); ?>/img/partenaires//pages/ensmr/ensmr5.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-3">Nouvelle Architecture</h3>
+            <h3 class="pt-3">{{ __('partners.newarchitecture') }}</h3>
             <p>
 				Dans le cadre de la nouvelle architecture pédagogique nationale (Système LMD), 11 filières présentées par
 				l’ENSMR (ex ENIM) ont été accréditées par Commission Nationale d’Accréditation de l’Enseignement Supérieur (CNACES) :
 			</p>
 <ul>
-            <li><i class="icofont-check"></i>Génie Informatique</li>
-			<li><i class="icofont-check"></i>Systèmes de Production</li>
-			<li><i class="icofont-check"></i>Électromécanique avec 2 options Electromécanique et Maintenance Industrielle</li>
-			<li><i class="icofont-check"></i>Génie Énergétique</li>
-			<li><i class="icofont-check"></i>Ingénierie des Procédés</li>
-			<li><i class="icofont-check"></i>Management Industriel</li>
-			<li><i class="icofont-check"></i>Environnement et Sécurité Industriels</li>
-			<li><i class="icofont-check"></i>Matériaux et Contrôle Qualité</li>
-			<li><i class="icofont-check"></i>Mines avec l’option Aménagement, Exploitation et Protection du Sol et sous Sol</li>
-			<li><i class="icofont-check"></i>Génie Hydro-Géotechnique</li>
-			<li><i class="icofont-check"></i>Génie Mécanique et Développement</li>
+            <li><i class="icofont-check"></i>{{ __('partners.computerengineering') }}</li>
+			<li><i class="icofont-check"></i>{ __('partners.productionsystems') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.electromechanical') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.energeticengineering') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.processengineering') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.industrialmanagement') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.industrialsafety') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.materialcontrol') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.miningwithoptions') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.geotechnical') }}</li>
+			<li><i class="icofont-check"></i>{{ __('partners.mechanical') }}</li>
 </ul>
 			<p>
    			Dans le cadre des mesures d’accompagnement à la stratégie énergétique nationale, notamment dans le domaine des énergies
@@ -177,14 +177,14 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
+                  <h3>{{ __('partners.address') }}</h3>
                   <p>Ecole Nationale de l'Industrie Minérale Av. Hadj Ahmed Cherkaoui - B.P. :<br> 753 - Agdal - Rabat. - 10000 </p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-cloud"></i>
-                  <h3>Site Web</h3><br>
+                  <h3>{{ __('partners.website') }}</h3><br>
                   <a href="https://www.enim.ac.ma/"><p>www.enim.ac.ma</p></a>
                 </div>
               </div>
@@ -198,7 +198,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Téléphone</h3>
+                  <h3>{{ __('partners.telephone') }}</h3>
                   <p>(+212) 5 37 68 02 30
 </p>
                 </div>

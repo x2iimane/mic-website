@@ -23,10 +23,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Partenaires</h2>
+          <h2>{{ __('nav.partners') }}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-			<li><a href="/partenaires">Partenaires</a></li>
+            <li><a href="/">{{ __('nav.home') }}</a></li>
+			<li><a href="/partenaires">{{ __('nav.partners') }}</a></li>
             <li>CNRST</li>
           </ol>
         </div>
@@ -39,7 +39,7 @@
       <div class="container col-sm-11 col-md-8">
 
           <div class="section-title">
-              <h1><B><span style="color: #566885;">Cnrst</span></B></h1>
+              <h1><B><span style="color: #566885;">CNRST</span></B></h1>
           </div>
 
         <div class="row" data-aos="fade-up">
@@ -47,7 +47,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires/pages/cnrst/cnrst1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-5">Présentation</h3>
+            <h3 class="pt-5">{{ __('about.presentation') }}</h3>
             <p>
               Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST.
 			  Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST. Présentation de CNRST.
@@ -61,7 +61,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires/pages/cnrst/cnrst1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 order-2 order-md-1">
-            <h3 class="pt-5">Contribution en projet</h3>
+            <h3 class="pt-5">{{ __('partners.contribution') }}</h3>
             <p>
               description de Contribution en projet description de Contribution en projet description de Contribution en projet description de Contribution en projet
 			  description de Contribution en projet description de Contribution en projet description de Contribution en projet description de Contribution en projet
@@ -75,7 +75,7 @@
             <img src="<?php echo url('/'); ?>/img/partenaires/pages/cnrst/cnrst1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7">
-            <h3 class="pt-5">Domaine d’expertise et bref historique</h3>
+            <h3 class="pt-5">{{ __('partners.expertisehistory') }}</h3>
             <p>
 				domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici.
 				domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici. domaines et informations ici.
@@ -100,7 +100,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-map"></i>
-                  <h3>Adresse</h3>
+                  <h3>{{ __('partners.address') }}</h3>
                   <p> Av. Angle Allal Al Fassi et Av. des FAR, Hay Ryad, BP. 8027<br>
 						10102 Rabat, Maroc Rabat 8027 Maroc
 				  </p>
@@ -109,7 +109,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-cloud"></i>
-                  <h3>Site Web</h3><br>
+                  <h3>{{ __('partners.website') }}</h3><br>
                   <a href="http://www.cnrst.ma/"><p>www.cnrst.ma</p></a>
                 </div>
               </div>
@@ -123,7 +123,7 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bx bx-phone-call"></i>
-                  <h3>Téléphone</h3>
+                  <h3>{{ __('partners.telephone') }}</h3>
                   <p><br>(+212) 05 37 56 98 00 </p>
                 </div>
               </div>
