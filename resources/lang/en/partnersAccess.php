@@ -1,9 +1,7 @@
 <?php 
 
     return [
-        'actualities' => [
-            
-        ],
+        'actualities' => [],
         'historical' =>[],
         'production' => [],
         'profile' => [],
