@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Réalisation - MIC</title>
+  <title>{{ __('realisations.realizationTitle')}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -21,11 +21,11 @@
     <section class="pt-5 breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Réalisations</h2>
+          <h2>{{ __('realisations.realizations')}}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/realisations">Réalisations</a></li>
-            <li>Digital Twin for Mine Value Chain Optimizations</li>
+            <li><a href="/">{{ __('nav.home')}}</a></li>
+            <li><a href="/realisations">{{ __('realisations.realizations')}}</a></li>
+            <li>{{ __('realisations.title2')}}</li>
           </ol>
         </div>
       </div>
@@ -36,16 +36,16 @@
                 <div class="pt-lg-0 col-sm-12 col-md-9">
                     <div class="p-5 info-box">
                         <div class="section-title">
-                            <h1><B><span style="color: #566885;">Digital Twin for Mine Value Chain Optimizations</span></B></h1>
+                            <h1><B><span style="color: #566885;">{{ __('realisations.title2')}}</span></B></h1>
                         </div>
                         <h1 class="p-3 pb-5" style="color: #566885;">
-                            Couplant simulation et données, le jumeau numérique colle au plus près du système réel qu’il modélise. Le secteur minier l’utilise pour surveiller, maintenir et optimiser ses machines et ses produits et éventuellement améliorer les performances opérationnelles des unités de production minières.
+                            {{ __('realisations.content2')}}
                         </h1>
                         <div class="entry-img p-5">
                             <img src="<?php echo url('/'); ?>/img/realisations/these_2/1.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="text-start">
-                            <h1 class="p-3">Problématique</h1>
+                            <h1 class="p-3">{{ __('realisations.problematic')}}</h1>
                             <h3 class="p-4">
                                 Pour la première fois depuis de nombreuses décennies, l'innovation technologique a dépassé l'innovation des processus d'affaires en permettant simultanément d'obtenir une croissance des revenus et de réduire les coûts, ce qui va de pair avec les grands principes de la quatrième révolution industrielle, appelant à atteindre de nouveaux niveaux de valeur commerciale dans l'ensemble du réseau et à rechercher l'excellence numérique pour la cocréation de valeur dans toute la chaîne de valeur. Aujourd'hui, l'exploitation minière est bien plus une question d'eﬀiciency que d'expansion, et l'un des principaux catalyseurs de ce développement est la numérisation. Sous le titre "faire plus avec moins", les appareils connectés, la collecte de données, l'analyse et les machines autonomes promettent des gains d'eﬀiciency importants et une meilleure productivité à moindre coût.
                                 Aujourd'hui, sur un site minier, on trouve un grand nombre d'équipements et de systèmes indépendants, et chacun de ces équipements, à travers les DCS (distributed control systems) et les PLC (programmable logic controller), dispose de ses propres informations et interfaces destinées aux opérateurs à des fins de supervision.
@@ -62,7 +62,7 @@
                             <div class="entry-img text-center pb-3">
                                 <img src="<?php echo url('/'); ?>/img/realisations/these_2/3.jpg" alt="" class="img-fluid">
                             </div>
-                            <h1 class="p-3">Valeurs Ajoutées</h1>
+                            <h1 class="p-3">{{ __('realisations.addedvalue')}}</h1>
                             <h3 class="p-4">
                                 Le fait de disposer d'un jumeau numérique pour un bien présente de nombreuses valeurs et avantages :
                                 <ul>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-sm-12 col-md-3 p-5">
                     <div class="member">
-                        <h2 class="pb-5">Equipe</h2>
+                        <h2 class="pb-5">{{ __('realisations.team')}}</h2>
                         <div class="member-info">
                         <h4>Pr. El Hassan ABDELWAHED</h4>
                             <span>Directeur de thèse</span>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Réalisation - MIC</title>
+  <title>{{ __('realisations.realizationTitle')}}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -21,11 +21,11 @@
     <section class="pt-5 breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Réalisations</h2>
+          <h2>{{ __('realisations.realizations')}}</h2>
           <ol>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/realisations">Réalisations</a></li>
-            <li>Prédiction des instabilités des terrains et prévention des chutes de blocs en mines souterraines par intelligence artificielle</li>
+            <li><a href="/">{{ __('nav.home')}}</a></li>
+            <li><a href="/realisations">{{ __('realisations.realizations')}}</a></li>
+            <li>{{ __('realisations.title4')}}</li>
           </ol>
         </div>
       </div>
@@ -37,16 +37,16 @@
                       <div class="pt-lg-0 col-sm-12 col-md-9">
                           <div class="p-5 info-box">
                               <div class="section-title">
-                                  <h1><B><span style="color: #566885;">Prédiction des instabilités des terrains et prévention des chutes de blocs en mines souterraines par intelligence artificielle</span></B></h1>
+                                  <h1><B><span style="color: #566885;">{{ __('realisations.title4')}}</span></B></h1>
                               </div>
                               <h1 class="p-3 pb-5" style="color: #566885;">
-                                  Prédiction des instabilités des terrains et prévention des chutes de blocs en mines souterraines par intelligence artificielle.
+                                  {{ __('realisations.title4')}}
                               </h1>
                               <div class="entry-img p-5">
                                   <img src="<?php echo url('/'); ?>/img/realisations/these_3/1.jpg" alt="" class="img-fluid h-auto">
                               </div>
                               <div class="text-start">
-                                  <h1 class="p-3">Problématique</h1>
+                                  <h1 class="p-3">{{ __('realisations.problematic')}}</h1>
                                   <h3 class="p-4">
                                       L’excavation des ouvrages dans le milieu souterrain, dont celle des mines particulièrement, présente plusieurs risques relatifs à la stabilité des massifs rocheux.  En effet, ceci peut générer différentes instabilités souterraines comme les chutes de blocs rocheux ou les déformations excessives des parois des cavités. Une prédiction adéquate de ces phénomènes est ainsi primordiale pour anticiper tout accident pouvant générer des pertes humaines ou matérielles lors de l’exécution des travaux dans les mines souterraines.
                                   </h3>
@@ -70,7 +70,7 @@
                                   <div class="entry-img text-center pb-3">
                                       <img src="<?php echo url('/'); ?>/img/realisations/these_4/3.jpg" alt="" class="img-fluid h-auto">
                                   </div>
-                                  <h1 class="p-3">Valeurs Ajoutées</h1>
+                                  <h1 class="p-3">{{ __('realisations.addedvalue')}}</h1>
                                   <h3 class="p-4">
                                       Maximisation de la sécurité du personnel et des équipements présents dans les mines souterraines à travers:
                                       <ul>
@@ -90,7 +90,7 @@
                       </div>
                       <div class="col-sm-12 col-md-3 p-5">
                           <div class="member">
-                              <h2 class="pb-5">Equipe</h2>
+                              <h2 class="pb-5">{{ __('realisations.team')}}</h2>
                               <div class="member-info">
                                   <h4>personne 1</h4>
                                   <span>rôle</span>
