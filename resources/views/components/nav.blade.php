@@ -15,9 +15,7 @@
                 <li class="nav-item {{ (Request::is('productions') ? 'activated' : '') }} {{ (Request::is('productions/*') ? 'activated' : '') }}"><a class="nav-link" href="/productions">Productions</a></li>
                 <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('nav.about') }}</a></li>
             </ul>
-            <ul >
-                <button type="button" class="btn btn-primary">fr/ang</button>
-            </ul>
+           
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
                     <form action="/recherche" class="form-outline d-flex mt-2">
@@ -27,7 +25,7 @@
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item {{ (Request::is('login') ? 'activated' : '') }}">
-                            <a class="nav-link" href="{{ route('login') }}">
+                            <a class="nav-link" href="{{ route('login',app()->getLocale()) }}">
                                {{ __('main.partnerAccess')}}</a>
                         </li>
                     @endif
@@ -53,19 +51,30 @@
                                     <a class="dropdown-item" href="/profile">Profile</a>
                                 </li>
                                 <li class="dropdown-submenu pr-4 pl-4">
-                                    <a class="dropdown-item"  href="{{ route('logout') }}"
+                                    <a class="dropdown-item"  href="{{ route('logout',app()->getLocale()) }}"
                                        onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
                                 </li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
                             </ul>
                         </li>
                 @endguest
+                <li class="nav-item ">
+                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'fr') }}" role="button" aria-haspopup="true" aria-expanded="false">
+                        FR
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'en') }}" role="button" aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </a>
+                </li>
             </ul>
+            
         </div>
     </div>
 </nav>
