@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'home' => "Accueil",
     'partners' => "Partenaires",
     'realizations' => "Realisations",

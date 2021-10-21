@@ -1,13 +1,13 @@
-<?php 
+<?php
 
     return [
         'actualities' => [
-            'accessPartners' => "Acces Partenaire - MIC",
+            'accessPartners' => "Accès Partenaire - MIC",
             'addNew' => "Ajouter une nouvelle actualité",
             'title' => "Titre",
             'summary' =>'Resumé',
-            'event' => 'Evènement',
-            'chosePictureText' => "Veulliez utiliser des photos de dimention 1028px*720px",
+            'event' => 'Evénement',
+            'chosePictureText' => "Veuilliez utiliser des photos de dimention 1028px*720px",
             'addNow' => "Ajouter l'actualité",
             'cancel' => "Annuler",
             'modify' => "Modifier l'actualité",
@@ -35,7 +35,7 @@
         ],
         'profile' => [
             'profileText' => "Modifier votre profile",
-            'passwordText' => "Mot de pass",
+            'passwordText' => "Mot de passe",
             'emailText' => "E-Mail",
             'lastNameText' => "Nom",
             'firtNameText' => "Prénom",
