@@ -8,7 +8,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/">{{ __('nav.home') }}</a></li>
+                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/home">{{ __('nav.home') }}</a></li>
                 <li class="nav-item {{ (Request::is('partenaires') ? 'activated' : '') }} {{ (Request::is('partenaires/*') ? 'activated' : '') }}"><a class="nav-link" href="/partenaires">{{ __('nav.partners') }}</a></li>
                 <li class="nav-item {{ (Request::is('realisations') ? 'activated' : '') }} {{ (Request::is('realisations/*') ? 'activated' : '') }}"><a class="nav-link" href="/realisations">{{ __('nav.realizations') }}</a></li>
                 <li class="nav-item {{ (Request::is('actualites') ? 'activated' : '') }} {{ (Request::is('actualites/*') ? 'activated' : '') }}"><a class="nav-link" href="/actualites">{{ __('nav.news') }}</a></li>
@@ -18,7 +18,7 @@
            
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
-                    <form action="/recherche" class="form-outline d-flex mt-2">
+                    <form action="{{ route('recherche',app()->getLocale()) }}" class="form-outline d-flex mt-2">
                         <input class="form-control" type="text" name="q" placeholder="{{ __('main.search') }}" size="25" @if(isset($searched_text)) value="{{$searched_text}} @endif">
                     </form>
                 </li>
@@ -34,21 +34,21 @@
                             <a class="nav-link dropdown-toggle" id="navbarAccess" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ Auth::user()->first_name }} {{ Auth::user()->last_name  }}</a>
                             <ul class="dropdown-menu mt-2" aria-labelledby="navbarAccess">
                                 <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('acces_partenaire/actualites') ? 'activated' : '')}}">
-                                    <a class="dropdown-item" href="/acces_partenaire/actualites">Actualités</a>
+                                    <a class="dropdown-item" href="/acces_partenaire/actualites">{{ __('nav.news')}}</a>
                                 </li>
                                 <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('acces_partenaire/productions') ? 'activated' : '')}}">
                                     <a class="dropdown-item" href="/acces_partenaire/productions">Productions</a>
                                 </li>
                                 @can('viewAny', Auth::user())
                                     <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('acces_partenaire/users') ? 'activated' : '')}}">
-                                        <a class="dropdown-item" href="/acces_partenaire/users">Utilisateurs</a>
+                                        <a class="dropdown-item" href="/acces_partenaire/users">{{ __('nav.users')}}</a>
                                     </li>
                                     <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('acces_partenaire/historiques') ? 'activated' : '')}}">
-                                        <a class="dropdown-item" href="/acces_partenaire/historiques">Historiques</a>
+                                        <a class="dropdown-item" href="/acces_partenaire/historiques">{{ __('nav.history')}}</a>
                                     </li>
                                 @endcan
                                 <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('profile') ? 'activated' : '')}}">
-                                    <a class="dropdown-item" href="/profile">Profile</a>
+                                    <a class="dropdown-item" href="/profile">{{ __('nav.profile')}}</a>
                                 </li>
                                 <li class="dropdown-submenu pr-4 pl-4">
                                     <a class="dropdown-item"  href="{{ route('logout',app()->getLocale()) }}"

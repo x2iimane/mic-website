@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 //
-Route::redirect('/','/en');
 
 /**/Route::group(['prefix' => '{locale}'], function ()
 {
@@ -130,3 +129,4 @@ Route::redirect('/','/en');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //
 });
+Route::redirect('/','/en');

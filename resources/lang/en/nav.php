@@ -6,4 +6,6 @@ return [
     'realizations' => 'Realizations',
     'news' => "News",
     'about' =>'About',
+    'profile' => "Profile",
+    'users' => "Users",
 ];

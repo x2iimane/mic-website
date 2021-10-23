@@ -6,4 +6,6 @@ return [
     'realizations' => "Realisations",
     'news' => "Actualités",
     'about' =>"À Propos",
+    'profile' => "Profil",
+    'users' => "Utilisateurs",
 ];

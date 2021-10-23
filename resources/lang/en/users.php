@@ -7,6 +7,7 @@ return [
     'adduser' => "Add a User",
     'addnewuser' => "Add a New User",
     'name' => 'Name',
+    'lastname' => 'Last Name',
     'firstname' => 'First Name',
     'password' => 'Password',
     'institution' => 'Institution',
