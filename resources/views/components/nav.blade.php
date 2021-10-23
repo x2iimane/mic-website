@@ -18,7 +18,7 @@
            
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
-                    <form action="{{ route('recherche',app()->getLocale()) }}" class="form-outline d-flex mt-2">
+                    <form action="/recherche" class="form-outline d-flex mt-2">
                         <input class="form-control" type="text" name="q" placeholder="{{ __('main.search') }}" size="25" @if(isset($searched_text)) value="{{$searched_text}} @endif">
                     </form>
                 </li>
