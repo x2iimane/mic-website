@@ -15,7 +15,7 @@
                 <li class="nav-item {{ (Request::is('productions') ? 'activated' : '') }} {{ (Request::is('productions/*') ? 'activated' : '') }}"><a class="nav-link" href="/productions">Productions</a></li>
                 <li class="nav-item  {{ (Request::is('about') ? 'activated' : '') }}"><a class="nav-link" href="/about">{{ __('nav.about') }}</a></li>
             </ul>
-           
+
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
                 <li class="nav-item">
                     <form action="/recherche" class="form-outline d-flex mt-2">
@@ -64,17 +64,19 @@
                         </li>
                 @endguest
                 <li class="nav-item ">
-                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'fr') }}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'/lngfr') }}" role="button" aria-haspopup="true" aria-expanded="false">
                         FR
+                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'en') }}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'/lng/en') }}" role="button" aria-haspopup="true" aria-expanded="false">
                         EN
+                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
             </ul>
-            
+
         </div>
     </div>
 </nav>
