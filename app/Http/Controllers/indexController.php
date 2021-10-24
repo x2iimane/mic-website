@@ -16,6 +16,7 @@ class indexController extends Controller
         $recentProduction = production::orderBy('id', 'DESC')->limit(5)->get();
         return view('index', compact('recentActualites', 'recentProduction'));
     }
+
     public function lng($lang = null)
     {
 

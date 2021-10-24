@@ -193,7 +193,7 @@ class Request
     /**
      * @var string
      */
-    protected $locale;
+    public $locale;
 
     /**
      * @var string
