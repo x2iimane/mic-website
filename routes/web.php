@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//
+
 Route::group(['middleware' => ['SetLanguages']], function () {
 ///**/Route::group(['prefix' => '{locale}'], function ()
     {

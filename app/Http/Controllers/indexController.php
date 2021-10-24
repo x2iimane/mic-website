@@ -6,6 +6,7 @@ use App\Models\actualite;
 use App\Models\production;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class indexController extends Controller
 {
@@ -20,13 +21,16 @@ class indexController extends Controller
     public function lng($lang = null)
     {
 
-//        die('rafiiiiiiq');
+//        dd('rafiiiiiiq');
+
         App::setLocale($lang);
+
+        session()->put('locale', $lang);
 
 
         session(['locale' => $lang]);
 
-
-        return back();
+        return redirect()->back();
+//        return back();
     }
 }

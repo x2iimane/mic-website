@@ -18,13 +18,14 @@ class SetLanguages
      */
     public function handle(Request $request, Closure $next)
     {
+//        dd($request->locale);
 
         App::setLocale($request->locale);
 
         if(session('locale')){
             App::setLocale(session('locale'));
         }else{
-            App::setLocale('fr');
+            App::setLocale($request->locale);
         }
 
         return $next($request);
