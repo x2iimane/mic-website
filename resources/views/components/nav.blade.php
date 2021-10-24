@@ -8,7 +8,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/home">{{ trans('nav.home') }}</a></li>
+                <li class="nav-item {{ (Request::is('/') ? 'activated' : '') }}"><a class="nav-link" href="/">{{ trans('nav.home') }}</a></li>
                 <li class="nav-item {{ (Request::is('partenaires') ? 'activated' : '') }} {{ (Request::is('partenaires/*') ? 'activated' : '') }}"><a class="nav-link" href="/partenaires">{{ __('nav.partners') }}</a></li>
                 <li class="nav-item {{ (Request::is('realisations') ? 'activated' : '') }} {{ (Request::is('realisations/*') ? 'activated' : '') }}"><a class="nav-link" href="/realisations">{{ __('nav.realizations') }}</a></li>
                 <li class="nav-item {{ (Request::is('actualites') ? 'activated' : '') }} {{ (Request::is('actualites/*') ? 'activated' : '') }}"><a class="nav-link" href="/actualites">{{ __('nav.news') }}</a></li>
