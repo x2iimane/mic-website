@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Session\Session;
 
 class SetLanguages
 {

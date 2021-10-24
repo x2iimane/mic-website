@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => ['SetLanguages']], function () {
 ///**/Route::group(['prefix' => '{locale}'], function ()
     {
-        Route::get('/lng/{lang}', 'indexController@lng');
+        Route::get('/lng/{lang}', '\App\Http\Controllers\indexController@lng');
 
         Route::get('/', '\App\Http\Controllers\indexController@index')->name('index.show');
 

@@ -64,7 +64,7 @@
                         </li>
                 @endguest
                 <li class="nav-item ">
-                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'/lngfr') }}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link"  href="{{ route(Route::currentRouteName(),'/lng/fr') }}" role="button" aria-haspopup="true" aria-expanded="false">
                         FR
                         <span class="sr-only">(current)</span>
                     </a>
