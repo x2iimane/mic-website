@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>{{ __('partnersAccess.actualities.accessPartners')}}</title>
+        <title>{{ __('partnersAccess.accessPartners')}}</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
@@ -14,7 +14,7 @@
             <div class="text-center container p-5">
                 <div class="justify-content-center row">
                     <div class="card card-body col-sm-12 col-md-10 bg-light align-self-center">
-                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('partnersAccess.historical.historicalTile')}}</h1>
+                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('partnersAccess.historicalTile')}}</h1>
                         <div class="row pb-5">
                             <div class="align-self-center col-sm-11 col-md-8 offset-md-2">
                                 <form action="/acces_partenaire/historiques" method="get">
@@ -24,7 +24,7 @@
                             @if(!$historiques->count())
                                 <div class='row align-self-center m-5'>
                                     <div class="p-5 border-5">
-                                        <h1>{{ __('partnersAccess.historical.noHistorical')}}</h1>
+                                        <h1>{{ __('partnersAccess.noHistorical')}}</h1>
                                     </div>
                                 </div>
                             @else
@@ -33,7 +33,7 @@
                                         <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">{{ __('partnersAccess.historical.userText')}}</th>
+                                            <th scope="col">{{ __('partnersAccess.userText')}}</th>
                                             <th scope="col">Date</th>
                                             <th scope="col">Action</th>
                                         </tr>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>{{ __('partnersAccess.actualities.accessPartners')}}</title>
+        <title>{{ __('partnersAccess.accessPartners')}}</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
@@ -15,7 +15,7 @@
                 <div class="modal-dialog" style="max-width: 650px;">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="update_user_label"><b>{{ __('partnersAccess.profile.profileText')}}</b></h4>
+                            <h4 class="modal-title" id="update_user_label"><b>{{ __('partnersAccess.profileText')}}</b></h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form class="form-outline" method="post" action="/profile/edit">
@@ -23,21 +23,21 @@
                             @method('PATCH')
                             <div class="modal-body">
                                 <div class="mb-3 row">
-                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.profile.emailText')}}</label>
+                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.emailText')}}</label>
                                     <div class="col-sm-10">
                                         <input type="email" name="email" class="form-control" value="{{Auth::user()->email}}">
                                     </div>
                                 </div>
                                 <div class="mb-3 row align-middle">
-                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.profile.passwordText')}}</label>
+                                    <label class="col-sm-2 col-form-label">{{ __('partnersAccess.passwordText')}}</label>
                                     <div class="col-sm-10">
                                         <input type="password" name="password" class="form-control">
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">{{ __('partnersAccess.profile.profileText')}}</button>
-                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.actualities.cancel')}}</button>
+                                <button type="submit" class="btn btn-primary">{{ __('partnersAccess.profileText')}}</button>
+                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('partnersAccess.cancel')}}</button>
                             </div>
                         </form>
                     </div>
@@ -58,7 +58,7 @@
                         <h1 class="m-md-5 p-5" style="font-size: 40px;">Profile</h1>
                         <div class="row">
                             <div class="col-sm-12 col-md-3 offset-md-9 pb-5">
-                                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#update_user">Modifier votre profile</button>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#update_user">{{ __('partnersAccess.profileText')}}</button>
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
@@ -68,25 +68,25 @@
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.lastNameText')}}</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.lastNameText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->first_name }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.firtNameText')}}</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.firtNameText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->last_name }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.emailText')}}</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.emailText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->email }}
                             </div>
                         </div>
                         <div class="row border-bottom" style="margin: 0px 40px 15px 40px">
-                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.profile.passwordText')}}</label>
+                            <label class="col-sm-4 col-form-label">{{ __('partnersAccess.passwordText')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 ********
                             </div>
