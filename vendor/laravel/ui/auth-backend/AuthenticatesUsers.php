@@ -5,6 +5,7 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\ValidationException;
 
 trait AuthenticatesUsers
@@ -169,6 +170,7 @@ trait AuthenticatesUsers
 
         if ($response = $this->loggedOut($request)) {
             $request->session()->flush();
+            Session::flush();
             return $response;
         }
 
