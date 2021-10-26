@@ -3,7 +3,7 @@
 return [
     'home' => "Accueil",
     'partners' => "Partenaires",
-    'realizations' => "Realisations",
+    'realizations' => "Réalisations",
     'news' => "Actualités",
     'about' =>"À Propos",
     'profile' => "Profil",

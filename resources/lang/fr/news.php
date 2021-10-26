@@ -4,6 +4,6 @@ return [
     'home' => "Accueil",
     'actualityTitle' => "Actualités - Projet MIC",
     'actuality' => "Actualités",
-    'shorting' => "Tri",
+    'sorting' => "Tri",
     'event' => "Evèments",
 ];

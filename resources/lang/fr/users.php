@@ -23,5 +23,7 @@ return [
     'projectstart' => 'Since The Project Started',
     'nothingtoshow' => "Aucun Utilisateur à Afficher!",
     'delete' => "Supprimer",
-    'placeholderUser' => "Rechercher un utilisateur"
+    'placeholderUser' => "Rechercher un Utilisateur",
+    "profile" => "Profil",
+
 ];

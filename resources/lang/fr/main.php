@@ -6,7 +6,7 @@ return [
     'about' => "À propos - MIC",
     'name' => 'PROJET MIC',
     'description' => "Mine Intelligente Connectée",
-    'projectPresentation' =>'Presentation Du Projet',
+    'projectPresentation' =>'Présentation Du Projet',
     'miningIndustry' =>'Industrie Minière',
     'industryVerion' =>'Industrie 4.0',
     'partnership' => "Partenariats",

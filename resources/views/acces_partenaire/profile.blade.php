@@ -55,7 +55,7 @@
                 @enderror
                 <div class="justify-content-center row">
                     <div class="card card-body bg-light align-self-center">
-                        <h1 class="m-md-5 p-5" style="font-size: 40px;">Profile</h1>
+                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('users.profile')}}</h1>
                         <div class="row">
                             <div class="col-sm-12 col-md-3 offset-md-9 pb-5">
                                 <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#update_user">{{ __('partnersAccess.profileText')}}</button>
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="row" style="margin: 0px 40px 0px 40px">
-                            <label class="col-sm-4 col-form-label">Institut</label>
+                            <label class="col-sm-4 col-form-label">{{ __('users.institution')}}</label>
                             <div class="col-sm-6" style="color: #e9c46a;">
                                 {{ Auth::user()->institut }}
                             </div>

@@ -4,6 +4,6 @@ return [
     'home' => "Home",
     'actualityTitle' => "News - MIC Project",
     'actuality' => "News",
-    'shorting' => "Short",
+    'sorting' => "Sort",
     'event' => "Events",
 ];

@@ -27,7 +27,7 @@
             'noproduction' => "Aucune actualité à afficher",
             'modifying' => "Modifier",
             'deleting' => "Supprimer",
-            'profileText' => "Modifier votre profile",
+            'profileText' => "Modifier Votre Profil",
             'passwordText' => "Mot de passe",
             'emailText' => "E-Mail",
             'lastNameText' => "Nom",

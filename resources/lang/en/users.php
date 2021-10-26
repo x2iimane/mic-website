@@ -24,5 +24,6 @@ return [
     'deletewarning' => "Are you sure you want to delete the User?",
     'nothingtoshow' => "No Users to Show!",
     'delete' => "Delete",
-    'placeholderUser' => "Search user",
+    'placeholderUser' => "Search Users",
+    "profile" => "Profile",
 ];

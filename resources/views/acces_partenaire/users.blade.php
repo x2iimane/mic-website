@@ -41,7 +41,7 @@
                             </div>
                             <div class="pb-3 col-sm-12 col-md-2 d-grid gap-2">
                                 <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#add_user">
-                                    {{ __('users.adduser')}}
+                                    {{ __('users.addnewuser')}}
                                 </button>
                             </div>
 

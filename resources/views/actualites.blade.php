@@ -53,7 +53,7 @@
                           <h3 class="border-bottom">
                               <a data-bs-toggle="collapse" href="#filters" role="button" aria-expanded="false" aria-controls="filters">
                                   <i class="icofont-settings"></i>
-                                  {{__('news.shorting')}}
+                                  {{__('news.sorting')}}
                               </a>
                           </h3>
                           <div class="collapse" id="filters">

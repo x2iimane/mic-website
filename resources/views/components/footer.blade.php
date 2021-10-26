@@ -24,7 +24,7 @@
             </div>
             <div class="col-lg-4 col-md-6 footer-info">
                 <h1 class="pb-5 pt-5"><b>{{ __('footer.socialmedia') }}</b></h1>
-                <h5>Vous pouvez également suivre toutes nos nouveautés et réalisations du projet MIC sur les réseaux sociaux.</h5>
+                <h5>{{ __('footer.socialmediapara') }}</h5>
                 <div class="social-links mt-3 text-center">
                     <a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>

@@ -49,7 +49,7 @@
                             <h3 class="p-4">
                                 Chaque phase de la production métallurgique nécessite un pilotage à travers des capteurs et des actionneurs. Une des phases les plus compliquées est le processus de la flottation, où on doit assurer la stabilité des concentrations des minerais flottés. Cette procédure de contrôle des concentrations au niveau de la mousse de flottation doit être en temps réel.
                             </h3>
-                            <h1 class="p-3">objectifs</h1>
+                            <h1 class="p-3">Objectifs</h1>
                             <h3 class="p-4">
                                 Notre objective est de trouver une solution utilisable 24 heures sur 24 dans toutes les unités de flottation, moins coûteuse, qui donne des résultats en temps réel et pourraient donner des informations importantes sur la situation des minéraux dans les cellules de flottation ce qui nous donne le pouvoir de prédire et réagir instantanément au changements de la chaîne de productions.
                             </h3>
