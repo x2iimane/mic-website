@@ -1,10 +1,7 @@
 <?php 
 
     return [
-<<<<<<< HEAD
-=======
-        'actualities' => [
->>>>>>> 4911960aacfb01ac5db4b0157b510db876cb1cdc
+
             'accessPartners' => "Partners Access - MIC",
             'addNew' => "Add a new actuality",
             'title' => "Title",
@@ -37,21 +34,9 @@
             'lastNameText' => "Name",
             'firtNameText' => "Firsname",
 
-<<<<<<< HEAD
+
         'actualitiesRoot' => "Actualities",
         'scienticProduction' => "Scientific Productions",
         'placeholderactuality' => "Search news",
         'placeholderproduction'  => "Search a production",
-
-=======
-        ],
-        'actualities' => [],
-        'historical' =>[],
-        'production' => [],
-        'profile' => [],
-        'user' => [],
-
-        'actualitiesRoot' => "Actualités",
-        'scienticProduction' => "Scientific productions",
->>>>>>> 4911960aacfb01ac5db4b0157b510db876cb1cdc
     ];

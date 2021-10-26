@@ -39,9 +39,4 @@
         'placeholderproduction' => "Rechercher une production",
         'profilemofifyertext' => "Modifier votre profile",
 
-<<<<<<< HEAD
-=======
-        'actualitiesRoot' => "Actualités",
-        'scienticProduction' => "Productions scientifiques",
->>>>>>> 4911960aacfb01ac5db4b0157b510db876cb1cdc
     ];
