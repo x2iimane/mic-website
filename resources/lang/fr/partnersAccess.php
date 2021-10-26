@@ -43,5 +43,6 @@
         ],
         'user' => [],
 
-        'actualitiesRoot' => "Actualités"
+        'actualitiesRoot' => "Actualités",
+        'scienticProduction' => "Productions scientifiques",
     ];

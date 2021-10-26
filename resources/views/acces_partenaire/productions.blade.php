@@ -26,7 +26,7 @@
                 @enderror
                 <div class="justify-content-center row">
                     <div class="card card-body col-sm-12 col-md-10 bg-light align-self-center">
-                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('partnersAccess.production.scienticProduction')}}</h1>
+                        <h1 class="m-md-5 p-5" style="font-size: 40px;">{{ __('partnersAccess.scienticProduction')}}</h1>
                         <div class="row pb-5">
                             <div class="pb-3 align-self-center col-sm-12 col-md-8 offset-md-1">
                                 <form action="/acces_partenaire/productions" method="get">

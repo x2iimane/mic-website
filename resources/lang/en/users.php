@@ -21,7 +21,7 @@ return [
     'modifytheuser' => 'Modify the User',
     'deleteuser' => 'Delete a User',
     'deletetheuser' => 'Delete the User',
-    'deletewarning' => "Are you sure you want to delete the User?"
+    'deletewarning' => "Are you sure you want to delete the User?",
     'nothingtoshow' => "No Users to Show!",
     'delete' => "Delete",
 ];

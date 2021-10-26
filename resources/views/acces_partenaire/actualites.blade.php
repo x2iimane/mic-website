@@ -36,7 +36,6 @@
                 <div class="justify-content-center row">
                     <div class="card card-body col-sm-12 col-md-10 bg-light align-self-center">
                         <h1 class="m-md-5 p-5" style="font-size: 40px;">
-                            Actualités
                             {{ __('partnersAccess.actualitiesRoot')}}
                         </h1>
                         <div class="row pb-5">
