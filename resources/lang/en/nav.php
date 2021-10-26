@@ -8,4 +8,5 @@ return [
     'about' =>'About',
     'profile' => "Profile",
     'users' => "Users",
+    'history' => "History",
 ];

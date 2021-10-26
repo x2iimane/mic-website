@@ -8,4 +8,5 @@ return [
     'about' =>"À Propos",
     'profile' => "Profil",
     'users' => "Utilisateurs",
+    'history' => "Historique",
 ];

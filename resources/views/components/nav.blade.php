@@ -44,7 +44,7 @@
                                         <a class="dropdown-item" href="/acces_partenaire/users">{{ __('nav.users')}}</a>
                                     </li>
                                     <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('acces_partenaire/historiques') ? 'activated' : '')}}">
-                                        <a class="dropdown-item" href="/acces_partenaire/historiques">{{trans('nav.history')}}</a>
+                                        <a class="dropdown-item" href="/acces_partenaire/historiques">{{ __('nav.history')}}</a>
                                     </li>
                                 @endcan
                                 <li class="dropdown-submenu pr-4 pl-4 {{(Request::is('profile') ? 'activated' : '')}}">
