@@ -1,8 +1,6 @@
 <?php 
 
     return [
-<<<<<<< HEAD
-        'actualities' => [
             'accessPartners' => "Partners Access - MIC",
             'addNew' => "Add a new actuality",
             'title' => "Title",
@@ -17,13 +15,9 @@
             'deleteConfirmation' => "Are you sure you want to delete this news ?",
             'noActuality' => "No news to display",
             'print' => "Display",
-        ],
-        'historical' =>[
             'noHistorical' => "No History to display",
             'historicalTile' => "Historical",
             'userText' => "Users",
-        ],
-        'production' => [
             'scienticProduction' => "Scientific productions",
             'addproducton' => "Add a new production",
             'linkText' => "Link",
@@ -33,22 +27,15 @@
             'noproduction' => "No production tuality to display",
             'modifying' => "Modify",
             'deleting' => "Delete",
-        ],
-        'profile' => [
             'profileText' => "Edit your profile",
             'passwordText' => "Password",
             'emailText' => "E-Mail",
             'lastNameText' => "Name",
             'firtNameText' => "Firsname",
 
-        ],
-=======
-        'actualities' => [],
-        'historical' =>[],
-        'production' => [],
-        'profile' => [],
->>>>>>> 9623c3f0cc39eecf747355d41bdda705967768fe
-        'user' => [],
+        'actualitiesRoot' => "Actualities",
+        'scienticProduction' => "Scientific Productions",
+        'placeholderactuality' => "Search news",
+        'placeholderproduction'  => "Search a production",
 
-        'actualitiesRoot' => "Actualités"
     ];

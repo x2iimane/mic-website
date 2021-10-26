@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'partneraccessproject' => 'Accés Partenaire - MIC',
     'users' => "Utilisateurs",
     'adduser' => "Ajouter un Utilisateur",
@@ -24,4 +23,5 @@ return [
     'projectstart' => 'Since The Project Started',
     'nothingtoshow' => "Aucun Utilisateur à Afficher!",
     'delete' => "Supprimer",
+    'placeholderUser' => "Rechercher un utilisateur"
 ];
