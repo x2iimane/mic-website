@@ -168,6 +168,7 @@ trait AuthenticatesUsers
         $request->session()->regenerateToken();
 
         if ($response = $this->loggedOut($request)) {
+            $request->session()->flush();
             return $response;
         }
 
