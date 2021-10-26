@@ -1,7 +1,6 @@
 <?php 
 
     return [
-
             'accessPartners' => "Partners Access - MIC",
             'addNew' => "Add a new actuality",
             'title' => "Title",
@@ -37,6 +36,7 @@
 
         'actualitiesRoot' => "Actualities",
         'scienticProduction' => "Scientific Productions",
+        'placeholderhistorical' => "Search an historical",
         'placeholderactuality' => "Search news",
         'placeholderproduction'  => "Search a production",
     ];

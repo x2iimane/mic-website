@@ -37,6 +37,7 @@
         'scienticProduction' => "Productions scientifiques",
         'placeholderactuality' => "Rechercher une actualité",
         'placeholderproduction' => "Rechercher une production",
+        'placeholderhistorical' =>"Rechercher un historique",
         'profilemofifyertext' => "Modifier votre profile",
 
     ];

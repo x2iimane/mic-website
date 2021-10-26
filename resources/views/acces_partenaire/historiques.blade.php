@@ -18,7 +18,7 @@
                         <div class="row pb-5">
                             <div class="align-self-center col-sm-11 col-md-8 offset-md-2">
                                 <form action="/acces_partenaire/historiques" method="get">
-                                    <input class="form-control" type="text" name="q" placeholder="Rechercher un historique">
+                                    <input class="form-control" type="text" name="q" placeholder="{{ __('partnersAccess.placeholderhistorical') }}">
                                 </form>
                             </div>
                             @if(!$historiques->count())
