@@ -2,6 +2,7 @@
 
 namespace Illuminate\Foundation\Auth;
 
+use Dompdf\Image\Cache;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -167,9 +168,10 @@ trait AuthenticatesUsers
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-
+        Cache::clear();
         if ($response = $this->loggedOut($request)) {
             $request->session()->flush();
+            Cache::clear();
             Session::flush();
             return $response;
         }
