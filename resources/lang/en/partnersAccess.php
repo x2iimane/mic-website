@@ -36,7 +36,7 @@
 
         'actualitiesRoot' => "News",
         'scienticProduction' => "Scientific Productions",
-        'placeholderhistorical' => "Search a History",
+        'placeholderhistorical' => "Search History",
         'placeholderactuality' => "Search News",
         'placeholderproduction'  => "Search Productions",
     ];
